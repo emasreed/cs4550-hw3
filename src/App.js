@@ -61,6 +61,9 @@ function App() {
   }
 
   function validGuess() {
+    if (isNaN(text)){
+      return false;
+    }
     if (text.length === 4) {
       let seen = "";
       for (const char of text) {
